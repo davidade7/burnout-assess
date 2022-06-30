@@ -149,8 +149,13 @@ section .your-results {
   text-align: center;
 }
 
+.graph {
+  display: flex;
+  justify-content: center;
+}
 .arc-graph {
-  margin-top: 50px;
+  position: absolute;
+  top: -59px;
 }
 .arc {
   fill: transparent;
@@ -180,7 +185,7 @@ section .your-results {
 
 .results-content {
   position: relative;
-  top: -200px;
+  margin-top: 109px;
 }
 
 .results-content .graph-title {
