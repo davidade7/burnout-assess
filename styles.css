@@ -1,0 +1,101 @@
+@font-face {font-family: "Circular-regular"; src: url('./assets/fonts/CircularStd-Book.otf')}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Circular-regular;
+  color: #C3C3C3
+}
+
+body {
+  background-color: #050213;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* --------------------------  */
+/* ASIDE */
+aside {
+  width: 242px;
+  height: calc(100vh - 40px);
+  background-color: #13141B;
+  border-radius: 20px 0 0 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* logo */
+.logo {
+  display: flex; 
+  justify-content: center;
+  margin: 30px 0 50px 0;
+}
+.logo span {
+  padding-left: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+/* menu */
+nav ul {
+  list-style: none;
+}
+nav li {
+  padding: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+nav li span {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+nav ul .active {
+  background: linear-gradient(274.17deg, #6958CC 2.7%, rgba(190, 94, 253, 0.53) 116.24%);
+  border-radius: 12px;
+}
+/* lower div */
+.menu-add {
+  height: 350px;
+  background-color: #F2E3FD;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-text, .bottom-text {
+  color: black;
+  text-align: center;
+}
+.menu-add .top-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.menu-add .bottom-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+.menu-add button {
+  background-color: rgba(191, 94, 253, 1);
+  padding: 16px;
+  border-radius: 12px;
+  color: white
+}
+
+
+
+
+main {
+  width: 1158px;
+  height: 100vh;
+  background-color: rgba(24, 26, 37, 1);
+}
