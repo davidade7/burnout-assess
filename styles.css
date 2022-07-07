@@ -14,9 +14,10 @@
 }
 
 body {
-  background-color: #050213;
+  background-color: #181A25;
   display: flex;
   justify-content: center;
+  min-height: 1024px;
 }
 
 
@@ -24,7 +25,7 @@ body {
 /* ASIDE */
 aside {
   width: 242px;
-  height: calc(1024px - 40px);
+  height: inherit;
   background-color: #13141B;
   border-radius: 20px 0 0 20px;
   padding: 20px;
@@ -93,14 +94,24 @@ nav ul .active {
   border-radius: 12px;
   color: white
 }
+.new-message {
+  background-color: #CB1E1F;
+  min-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: -8px;
+  top: -8px;
+}
 
-
-
-
+/* --------------------------  */
+/* MAIN */
 main {
   width: 1158px;
-  height: 1024px;
-  background: #181A25; /* CHECK THE RIGHT COLOR*/
+  height: 100%;
+  min-height: 1024px;
+  background-image: radial-gradient(farthest-corner at 196px 173px,
+  rgba(190, 94, 253, 0.05) 0%, rgba(24, 26, 37, 1) 100%);
 }
 main > header {
   display: flex;
@@ -118,8 +129,6 @@ main > header {
   color: #c3c3c3;
   margin-top: 12px;
 }
-
-
 .header-right {
   display: flex;
   justify-content: space-between;
@@ -137,8 +146,6 @@ main > header {
 .header-right button span {
   margin-left: 13px;
 }
-
-
 main section {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -153,10 +160,10 @@ section .your-results {
   text-align: center;
   margin: 0 0 30px 30px;
 }
-
 .graph {
   display: flex;
   justify-content: center;
+  min-width: 280px;
 }
 .arc-graph {
   position: absolute;
@@ -187,12 +194,10 @@ section .your-results {
   stroke-dasharray: 36 730;
   stroke-dashoffset: 35;
 }
-
 .results-content {
   position: relative;
   margin-top: 109px;
 }
-
 .results-content .graph-title {
   font-size: 14px;
   font-weight: 450;
@@ -200,7 +205,6 @@ section .your-results {
   color:rgba(195, 195, 195, 1);
   margin-bottom: 2px;  
 }
-
 .results-content .graph-score {
   font-size: 72px;
   font-weight: 700;
@@ -233,15 +237,12 @@ section .your-results {
   height: 1px;
   background-color: rgba(44, 47, 65, 1);
 }
-
 .results-content article {
   margin: 24px;
 }
 .results-content article:first-child {
   margin-top: 30px;
 }
-
-
 .results-content article header {
   display: flex;
   justify-content: space-between;
@@ -265,14 +266,12 @@ section .your-results {
   line-height: 24px;
   color: white;
 }
-
 .horizontal-gauge .grey-gauge {
   height: 10px;
   background-color: #434655;
   border-radius: 5px;
   margin: 12px 0 2px 0;
 }
-
 .horizontal-gauge .second-gauge {
   height: 10px;
   border-radius: 5px;
@@ -460,12 +459,11 @@ section .your-results {
   margin-left: 30px;
   padding: 30px 0 0 30px;
 }
-
 .third-area .content {
   background: #1C1C2A;
   border-radius: 12px;
+  padding-bottom: 36px;
 }
-
 .third-area header {
   padding: 30px 0 0 36px;
 }
@@ -497,7 +495,6 @@ section .your-results {
 .third-area .body .list .item {
   display: flex;
   margin: 0 0 0 22px;
-  align-items: center;
 }
 .third-area .body .list .active {
   align-items: flex-start;
@@ -523,10 +520,12 @@ section .your-results {
 .third-area .body .active .number {
   background-color: #BF5EFD;
 }
+
+
 /* corriger wires */ 
 .third-area .body .wire {
   width: 1px;
-  height: 153px;
+  min-height: 153px;
   background-color: #464665;
   margin: 3px 0;
 }
@@ -536,6 +535,9 @@ section .your-results {
   background-color: #464665;
   margin: 3px 0;
 }
+
+
+
 .third-area .body .body-content {
   margin: 0 11px 0 25px;  
 }
@@ -544,7 +546,12 @@ section .your-results {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  color: rgba(195, 195, 195, 1);
+  padding-top: 5px;
+}
+.third-area .body .active .title {
   color: #FFFFFF;
+  padding-top: 0;
 }
 .third-area .body .body-content .subtitle {
   font-weight: 300;
@@ -569,6 +576,3 @@ section .your-results {
   width: fit-content;
   gap: 16px;
 }
-
-/* ----------------------------------------------------- */
-/* Common */
